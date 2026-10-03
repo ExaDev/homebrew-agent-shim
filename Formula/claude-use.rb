@@ -2,30 +2,30 @@
 class ClaudeUse < Formula
   desc "Profile manager and launcher for Claude Code with per-directory sharing rules"
   homepage "https://github.com/ExaDev/claude-use"
-  version "6.2.1"
+  version "6.2.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/ExaDev/claude-use/releases/download/v6.2.1/claude-use-macos-arm64"
-      sha256 "90617fcc5db791ad07566f9c4fe727d45e43143dde9e1a73eb8cb9b22e679ffc"
+      url "https://github.com/ExaDev/claude-use/releases/download/v6.2.2/claude-use-macos-arm64"
+      sha256 "8e60815ec8ac9713703f07bf8e94085569fe8e6614d26f5cdd5a9368b256c0fe"
     end
     on_intel do
       # The SEA binary segfaults on every invocation on real x64 macOS hardware -- a known, unfixed upstream Node bug (see docs/release-process.md's "Build (Node SEA)" section for the full writeup and citations). Installs via npm + a Homebrew-managed Node instead, same code this project already publishes and verifies on the npm channel, on every other platform.
-      url "https://registry.npmjs.org/claude-use/-/claude-use-6.2.1.tgz"
-      sha256 "ea1040f4c4ff90830c405286a788d1727eca277e4637ec7af3f03ac04701376a"
+      url "https://registry.npmjs.org/claude-use/-/claude-use-6.2.2.tgz"
+      sha256 "4b31c7f338d0f628de1f98640733acb1c7e0b452c9df34f298f8c7acafb40ea5"
       depends_on "node"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ExaDev/claude-use/releases/download/v6.2.1/claude-use-linux-arm64"
-      sha256 "f7276724fd6f956545a93e4ea2a21c5b5a0b6afe1676fbc825663e469f87fc08"
+      url "https://github.com/ExaDev/claude-use/releases/download/v6.2.2/claude-use-linux-arm64"
+      sha256 "2f3ae2b476055c09e5d1ce9fb890d3d3c5e8c46e831000b1c6eeff3aace0ffaa"
     end
     on_intel do
-      url "https://github.com/ExaDev/claude-use/releases/download/v6.2.1/claude-use-linux-x64"
-      sha256 "9cef8d0a65bcfdd662ae47d797da621f746cbcf6f9a71e0c60900702db6bea71"
+      url "https://github.com/ExaDev/claude-use/releases/download/v6.2.2/claude-use-linux-x64"
+      sha256 "c2700cd04ac097e41cc0af1168988702a44cf2c723310fd8d38a09c89be73509"
     end
   end
 
