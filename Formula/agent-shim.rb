@@ -2,30 +2,30 @@
 class AgentShim < Formula
   desc "Profile manager and launcher for Claude Code with per-directory sharing rules"
   homepage "https://github.com/ExaDev/agent-shim"
-  version "8.4.1"
+  version "8.5.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ExaDev/agent-shim/releases/download/v8.4.1/agent-shim-macos-arm64"
-      sha256 "74ebd1ab43f10eb6605a11bc943494b00b883bff7656b4300e238d1b029ae4ae"
+      url "https://github.com/ExaDev/agent-shim/releases/download/v8.5.0/agent-shim-macos-arm64"
+      sha256 "8968dd0f18355a5310a5a0ddfd27ae21f45811522fbe512c1ba2b25fb048c997"
     end
     on_intel do
       # The SEA binary segfaults on every invocation on real x64 macOS hardware -- a known, unfixed upstream Node bug (see docs/release-process.md's "Build (Node SEA)" section for the full writeup and citations). Installs via npm + a Homebrew-managed Node instead, same code this project already publishes and verifies on the npm channel, on every other platform.
-      url "https://registry.npmjs.org/agent-shim/-/agent-shim-8.4.1.tgz"
-      sha256 "5c14e5c07a19d9f7a6f2511eddad8465557f5dd506e3e8620209325dac03d544"
+      url "https://registry.npmjs.org/agent-shim/-/agent-shim-8.5.0.tgz"
+      sha256 "d81f04af6c6c79bad23eae0046da06f5d22f930932630797e5ae993df53ee0bc"
       depends_on "node"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ExaDev/agent-shim/releases/download/v8.4.1/agent-shim-linux-arm64"
-      sha256 "c3b5210bd220337dc17a25323b6afda3fd69bd1e74a3eb7c5bb4e56c6f9c7fb8"
+      url "https://github.com/ExaDev/agent-shim/releases/download/v8.5.0/agent-shim-linux-arm64"
+      sha256 "6f9e677da83f1fb602890a6c12bb68b132c0d88e891d70bc0861332c8bbbb252"
     end
     on_intel do
-      url "https://github.com/ExaDev/agent-shim/releases/download/v8.4.1/agent-shim-linux-x64"
-      sha256 "3c1ca13cec181b8091d1c8b854dfec16fcf499d4e6aa411cd809e0c56c9c5a6b"
+      url "https://github.com/ExaDev/agent-shim/releases/download/v8.5.0/agent-shim-linux-x64"
+      sha256 "1c05e010167441b2c6b2bc357c5247bc83514e7b437dd6c7531295bb6c2e8a4c"
     end
   end
 
