@@ -2,30 +2,30 @@
 class AgentShim < Formula
   desc "Profile manager and launcher for Claude Code with per-directory sharing rules"
   homepage "https://github.com/ExaDev/agent-shim"
-  version "11.68.3"
+  version "11.69.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ExaDev/agent-shim/releases/download/v11.68.3/agent-shim-macos-arm64"
-      sha256 "e604c6620e7303da5739e677a0d208b9b4383eb3f9ebda603162e9619a6d5abf"
+      url "https://github.com/ExaDev/agent-shim/releases/download/v11.69.0/agent-shim-macos-arm64"
+      sha256 "c1ed24b4635e08f3ded3dac2970beb2ab00f328f28f8a2bdb4c18ab88dbff664"
     end
     on_intel do
       # The SEA binary segfaults on every invocation on real x64 macOS hardware -- a known, unfixed upstream Node bug (see docs/release-process.md's "Build (Node SEA)" section for the full writeup and citations). Installs via npm + a Homebrew-managed Node instead, same code this project already publishes and verifies on the npm channel, on every other platform.
-      url "https://registry.npmjs.org/agent-shim/-/agent-shim-11.68.3.tgz"
-      sha256 "ac1c2cce6b6d2cc9d71bc0e5f08999a44038313524c011da244128fb5f95f405"
+      url "https://registry.npmjs.org/agent-shim/-/agent-shim-11.69.0.tgz"
+      sha256 "450e1bfc01cfdac8a8e617b3011d65dcf0a13f924070ff5616ffef0207889a53"
       depends_on "node"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ExaDev/agent-shim/releases/download/v11.68.3/agent-shim-linux-arm64"
-      sha256 "f213567db46131af2403889ccf0d65f2e8e38ace210c0fa6806af99e3add300d"
+      url "https://github.com/ExaDev/agent-shim/releases/download/v11.69.0/agent-shim-linux-arm64"
+      sha256 "48a798e394211a680a0bb06f7f32223892281647a1cfefdc2005290a3bae22a7"
     end
     on_intel do
-      url "https://github.com/ExaDev/agent-shim/releases/download/v11.68.3/agent-shim-linux-x64"
-      sha256 "27093cb5484e5de7bf734a23c7e2b254fcdc6bd300020276c713b969b39ef13e"
+      url "https://github.com/ExaDev/agent-shim/releases/download/v11.69.0/agent-shim-linux-x64"
+      sha256 "528c14678922e18239ef6aaff789bc2ac2206062e99700b6f90a6a5c8025a542"
     end
   end
 
