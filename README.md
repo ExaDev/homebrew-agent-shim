@@ -1,5 +1,7 @@
 # homebrew-claude-use
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/ExaDev/homebrew-agent-shim)
+
 Homebrew tap for [`claude-use`](https://github.com/ExaDev/claude-use), a profile manager and launcher for Claude Code.
 
 ## Install
